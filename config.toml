@@ -1,0 +1,27 @@
+# Image Upscaler Configuration File
+# You can customize your default upscaling settings here.
+
+# Target resolution (Width x Height)
+target_width = 720
+target_height = 480
+
+# Scaling mode when input aspect ratio differs from target:
+# - "stretch" : Stretch to fit exact dimensions (default)
+# - "fit"     : Preserve aspect ratio and add black bars/padding to center
+# - "fill"    : Preserve aspect ratio, scale to fill and crop excess edges
+mode = "stretch"
+
+# Resampling algorithm:
+# - "lanczos3"   : High quality with sharp details (recommended)
+# - "catmull-rom": Fast cubic filter
+# - "mitchell"   : Smooth balanced cubic filter
+# - "bilinear"   : Fast linear interpolation
+# - "nearest"    : Nearest-neighbor (pixel art / retro)
+filter = "lanczos3"
+
+# Contrast Adaptive Sharpening (CAS) strength:
+# 0.0 = disabled, 0.35 = balanced & natural, 0.7+ = high sharpness
+sharpen = 0.35
+
+# Output quality for JPEG/WebP formats (1 - 100)
+quality = 95
